@@ -1,0 +1,23 @@
+# application/book+yaml
+metadata:
+    title: "Thème - portfolio"
+    type: "theme"
+    creator: "omnibook"
+    language: "en"
+    modified: "2015-09-29T17:00:00Z"
+links:
+  - rel: "import"
+    idref: "7e91033c-19b5-4888-967b-4059a3daa5bf"
+resources:
+  - href: "logo.jpg"
+    rel: "cover"
+  - href: "obk_portfolio/schema.yaml"
+  - href: "obk_portfolio/css/editor.css"
+  - href: "obk_portfolio/css/_app.min.css"
+paths:
+  - metadata:
+        type: "master"
+        media: all
+    items:
+      - href: "obk_portfolio/theme-layout.html"
+      - href: "obk_portfolio/theme-vertical.html"

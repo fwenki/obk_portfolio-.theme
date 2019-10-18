@@ -1,0 +1,89 @@
+# Overlay
+obk_portfolio-overlay:
+    selector: "#overlay"
+    opaque: true
+    template: '<div id="overlay"></div>'
+    contents:
+        - "$overlay"
+    categories:
+        - "$root"
+# Pages
+obk_portfolio-pageverticale:
+    type: struct
+    selector: ".page-verticale"
+    template: |
+        <div class="page page-verticale">
+            <div class="left">
+                <div class="left-inside"></div>
+            </div>
+            <div class="right"></div>
+        </div>
+    contents:
+        - ".left-inside"
+        - ".right"
+    categories:
+        - "$root"
+# HTML
+h1:
+    properties:
+      - id: "margin"
+        title: "Margin"
+        type: "className"
+        input: "choice"
+        choices:
+            "No margin": "m-b-0"
+            "More margin": "m-b-30"
+h2:
+    properties:
+      - id: "margin"
+        title: "Margin"
+        type: "className"
+        input: "choice"
+        choices:
+            "No margin": "m-b-0"
+            "More margin": "m-b-30"
+h3:
+    properties:
+      - id: "margin"
+        title: "Margin"
+        type: "className"
+        input: "choice"
+        choices:
+            "No margin": "m-b-0"
+            "More margin": "m-b-30"
+h4:
+    properties:
+      - id: "margin"
+        title: "Margin"
+        type: "className"
+        input: "choice"
+        choices:
+            "No margin": "m-b-0"
+            "More margin": "m-b-30"
+h5:
+    properties:
+      - id: "margin"
+        title: "Margin"
+        type: "className"
+        input: "choice"
+        choices:
+            "No margin": "m-b-0"
+            "More margin": "m-b-30"
+h6:
+    properties:
+      - id: "margin"
+        title: "Margin"
+        type: "className"
+        input: "choice"
+        choices:
+            "No margin": "m-b-0"
+            "More margin": "m-b-30"
+p:
+    properties:
+      - id: "margin"
+        title: "Margin"
+        type: "className"
+        input: "choice"
+        choices:
+            "No margin": "m-b-0"
+            "More margin": "m-b-30"
