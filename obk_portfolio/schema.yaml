@@ -10,6 +10,7 @@ obk_portfolio-overlay:
 # Pages
 obk_portfolio-pageverticale:
     type: struct
+    title: "page"
     selector: ".page-verticale"
     template: |
         <div class="page page-verticale">
@@ -23,6 +24,13 @@ obk_portfolio-pageverticale:
         - ".right"
     categories:
         - "$root"
+    properties:
+      - id: "invert-layout"
+        title: "Invert-layout"
+        type: "className"
+        input: "choice"
+        choices:
+            "invert-layout": "invert-layout"
 # HTML
 h1:
     properties:
@@ -87,3 +95,65 @@ p:
         choices:
             "No margin": "m-b-0"
             "More margin": "m-b-30"
+ul:
+    properties:
+      - id: "margin"
+        title: "Margin"
+        type: "className"
+        input: "choice"
+        choices:
+            "No margin": "m-b-0"
+ol:
+    properties:
+      - id: "margin"
+        title: "Margin"
+        type: "className"
+        input: "choice"
+        choices:
+            "No margin": "m-b-0"
+table:
+    template: '<table class="table"></table>'
+    selector: ".table"
+    properties:
+      - id: "style"
+        title: "Style"
+        type: "className"
+        input: "choice"
+        choices:
+            "table striped": "table-striped"
+            "table dark": "table-dark"
+            "table borderless": "table-borderless"
+            "table small": "table-sm"
+hr:
+    properties:
+      - id: "style"
+        title: "Style"
+        type: "className"
+        input: "choice"
+        choices:
+            "Dotted": "dotted"
+            "Dashed": "dashed"
+      - id: "size"
+        title: "Size"
+        type: "className"
+        input: "choice"
+        choices:
+            "Bigger": "size-two"
+video_figure:
+    properties:
+      - id: "inside"
+        title: "Habillage"
+        type: "className"
+        input: "choice"
+        choices:
+            "gauche": "media-inside-left"
+            "droite": "media-inside-right"
+image_figure:
+    properties:
+      - id: "inside"
+        title: "Habillage"
+        type: "className"
+        input: "choice"
+        choices:
+            "gauche": "media-inside-left"
+            "droite": "media-inside-right"
