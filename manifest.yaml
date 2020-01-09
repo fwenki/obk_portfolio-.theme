@@ -14,6 +14,8 @@ resources:
   - href: "obk_portfolio/schema.yaml"
   - href: "obk_portfolio/css/editor.css"
   - href: "obk_portfolio/css/_app.min.css"
+  - href: "obk_portfolio/js/highcharts.js"
+  - href: "obk_portfolio/js/data.js"
 paths:
   - metadata:
         type: "master"
